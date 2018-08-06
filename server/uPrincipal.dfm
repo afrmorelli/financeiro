@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Servidor - Financeiro Pessoal'
   ClientHeight = 242
   ClientWidth = 472
   Color = clBtnFace

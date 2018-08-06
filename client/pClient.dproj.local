@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/07/19 11:00:47.000.658,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/21 09:14:53.000.145,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/23 11:28:26.000.387,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/23 14:51:30.000.185,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/28 09:19:48.000.770,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/08/06 17:15:21.713,=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/08/06 17:18:30.757,D:\projetos\financeiro\client\uPrincipal.pas=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/08/06 17:18:30.757,D:\projetos\financeiro\client\uPrincipal.dfm=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2018/08/06 17:18:35.539,D:\projetos\financeiro\client\pClient.dproj=C:\Users\afrmo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/08/06 17:30:21.838,=D:\projetos\financeiro\client\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2018/08/06 17:30:24.442,=D:\projetos\financeiro\client\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2018/08/06 17:30:49.658,D:\projetos\financeiro\client\uCC.pas=D:\projetos\financeiro\client\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2018/08/06 17:30:59.425,D:\projetos\financeiro\client\uCM.pas=D:\projetos\financeiro\client\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2018/08/06 17:30:59.425,D:\projetos\financeiro\client\uCM.dfm=D:\projetos\financeiro\client\ClientModuleUnit1.dfm</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="uCC.pas"/>
+    <File Path="uCM.pas"/>
+    <File Path="uCM.dfm"/>
+    <File Path="uPrincipal.pas"/>
+    <File Path="uPrincipal.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

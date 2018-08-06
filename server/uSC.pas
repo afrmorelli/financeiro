@@ -5,21 +5,13 @@ interface
 uses System.SysUtils, System.Classes,
   Datasnap.DSTCPServerTransport,
   Datasnap.DSServer, Datasnap.DSCommonServer,
-  Datasnap.DSClientMetadata, Datasnap.DSHTTPServiceProxyDispatcher,
-  Datasnap.DSProxyJavaAndroid, Datasnap.DSProxyJavaBlackBerry,
-  Datasnap.DSProxyObjectiveCiOS, Datasnap.DSProxyCsharpSilverlight,
-  Datasnap.DSProxyFreePascal_iOS,
-  Datasnap.DSAuth, IPPeerServer, Datasnap.DSMetadata, Datasnap.DSServerMetadata,
-  Datasnap.DSHTTP;
+  Datasnap.DSAuth, IPPeerServer;
 
 type
-  TServerContainer1 = class(TDataModule)
+  TSC = class(TDataModule)
     DSServer1: TDSServer;
     DSTCPServerTransport1: TDSTCPServerTransport;
     DSAuthenticationManager1: TDSAuthenticationManager;
-    DSHTTPServiceProxyDispatcher1: TDSHTTPServiceProxyDispatcher;
-    DSProxyGenerator1: TDSProxyGenerator;
-    DSServerMetaDataProvider1: TDSServerMetaDataProvider;
     DSServerClass1: TDSServerClass;
     procedure DSServerClass1GetClass(DSServerClass: TDSServerClass;
       var PersistentClass: TPersistentClass);
@@ -34,22 +26,22 @@ type
   end;
 
 var
-  ServerContainer1: TServerContainer1;
+  SC: TSC;
 
 implementation
 
 
 {$R *.dfm}
 
-uses Winapi.Windows, ServerMethodsUnit1;
+uses Winapi.Windows, uSM;
 
-procedure TServerContainer1.DSServerClass1GetClass(
+procedure TSC.DSServerClass1GetClass(
   DSServerClass: TDSServerClass; var PersistentClass: TPersistentClass);
 begin
-  PersistentClass := ServerMethodsUnit1.TServerMethods1;
+  PersistentClass := uSM.TSM;
 end;
 
-procedure TServerContainer1.DSAuthenticationManager1UserAuthenticate(
+procedure TSC.DSAuthenticationManager1UserAuthenticate(
   Sender: TObject; const Protocol, Context, User, Password: string;
   var valid: Boolean; UserRoles: TStrings);
 begin
@@ -58,7 +50,7 @@ begin
   valid := True;
 end;
 
-procedure TServerContainer1.DSAuthenticationManager1UserAuthorize(
+procedure TSC.DSAuthenticationManager1UserAuthorize(
   Sender: TObject; EventObject: TDSAuthorizeEventObject;
   var valid: Boolean);
 begin
