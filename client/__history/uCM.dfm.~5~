@@ -1,0 +1,30 @@
+object cm: Tcm
+  OldCreateOrder = False
+  Height = 271
+  Width = 415
+  object sqlConexao: TSQLConnection
+    DriverName = 'DataSnap'
+    LoginPrompt = False
+    Params.Strings = (
+      'Port=211'
+      'HostName=localhost'
+      'CommunicationProtocol=tcp/ip'
+      'DatasnapContext=datasnap/')
+    Connected = True
+    Left = 48
+    Top = 40
+  end
+  object dspConexao: TDSProviderConnection
+    ServerClassName = 'Tsm'
+    Connected = True
+    SQLConnection = sqlConexao
+    Left = 56
+    Top = 152
+  end
+  object cdsUsuario: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 216
+    Top = 168
+  end
+end

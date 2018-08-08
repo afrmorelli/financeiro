@@ -7,13 +7,25 @@ uses System.SysUtils, System.Classes, System.Json,
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
   FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
   FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait,
-  FireDAC.Comp.UI, Data.DB, FireDAC.Comp.Client;
+  FireDAC.Comp.UI, Data.DB, FireDAC.Comp.Client, FireDAC.Phys.PGDef,
+  FireDAC.Phys.PG, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, Datasnap.Provider, FireDAC.Comp.DataSet;
 
 type
   TSM = class(TDSServerModule)
     fdConexao: TFDConnection;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
+    FDPhysPgDriverLink1: TFDPhysPgDriverLink;
+    fbConexaoPG: TFDConnection;
+    fdQueryTemp: TFDQuery;
+    dspTemp: TDataSetProvider;
+    fdQueryUsuario: TFDQuery;
+    fdQueryUsuarioid: TIntegerField;
+    fdQueryUsuarionome: TWideStringField;
+    fdQueryUsuariologin: TWideStringField;
+    fdQueryUsuariosenha: TWideStringField;
+    dspUsuario: TDataSetProvider;
   private
     { Private declarations }
   public

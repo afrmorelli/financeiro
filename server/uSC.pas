@@ -5,7 +5,7 @@ interface
 uses System.SysUtils, System.Classes,
   Datasnap.DSTCPServerTransport,
   Datasnap.DSServer, Datasnap.DSCommonServer,
-  Datasnap.DSAuth, IPPeerServer;
+  Datasnap.DSAuth, IPPeerServer,Midas,midaslib;
 
 type
   TSC = class(TDataModule)

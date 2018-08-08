@@ -4,11 +4,19 @@ interface
 
 uses
   System.SysUtils, System.Classes, uCC, Data.DBXDataSnap,
-  IPPeerClient, Data.DBXCommon, Data.DB, Data.SqlExpr;
+  IPPeerClient, Data.DBXCommon, Data.DB, Data.SqlExpr,midaslib,midas,
+  Datasnap.DBClient, Datasnap.DSConnect;
 
 type
   Tcm = class(TDataModule)
-    SQLConnection1: TSQLConnection;
+    sqlConexao: TSQLConnection;
+    dspConexao: TDSProviderConnection;
+    cdsUsuario: TClientDataSet;
+    cdsTemp: TClientDataSet;
+    cdsUsuarioid: TIntegerField;
+    cdsUsuarionome: TWideStringField;
+    cdsUsuariologin: TWideStringField;
+    cdsUsuariosenha: TWideStringField;
   private
     FInstanceOwner: Boolean;
     FSMClient: TSMClient;
